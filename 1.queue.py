@@ -1,10 +1,9 @@
 # python 的队列
 # 生产者/消费者练习
-import time
 import random
+import time
 from queue import Queue
 from threading import Thread
-
 
 # 生产者
 
@@ -30,7 +29,7 @@ class Producer(Thread):
 
 class Consumer(Thread):
   def __init__(self, queue):
-    super.__init__();
+    super.__init__(self, queue);
     self.queue = queue
 
   def run(self):
