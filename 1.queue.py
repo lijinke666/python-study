@@ -46,3 +46,6 @@ consumer = Consumer(queue)
 
 producer.start()
 consumer.start()
+
+while True:
+  time.sleep(1)
